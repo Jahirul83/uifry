@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        display : "'Play', sans-serif",
+      }
+    },
   },
   daisyui: {
     themes: ["light"],
