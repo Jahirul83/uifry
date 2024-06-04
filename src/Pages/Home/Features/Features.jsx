@@ -18,7 +18,7 @@ const Features = () => {
         color: dark ? '#ffffff' : '#333333',
     };
     return (
-        <div  className='flex flex-col-reverse md:flex-row items-center'>
+        <div style={containerStyle} className='flex flex-col-reverse md:flex-row items-center'>
             <div data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
