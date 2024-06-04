@@ -1,4 +1,6 @@
 import starIcon from '../../../assets/StarIcon.png';
+import boxIcon from '../../../assets/boxIcon.png';
+import cubeIcon from '../../../assets/cubeIcon.png';
 import features from '../../../assets/features.png';
 
 const Features = () => {
@@ -12,18 +14,18 @@ const Features = () => {
                 <h1 className='text-4xl font-bold'>Uifry Premium</h1>
                 <div className='mt-3 p-11'>
                     <div className='flex'>
-                        <img className='mr-2' src={starIcon} alt="" />
-                        <h1>Budgeting Intervals</h1>
+                        <img className='mr-2 my-2' src={starIcon} alt="" />
+                        <h1 className='font-bold my-2'>Budgeting Intervals</h1>
                     </div>
                     <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
                     <div className='flex'>
-                        <img className='mr-2' src={starIcon} alt="" />
-                        <h1>Budgeting Intervals</h1>
+                        <img className='mr-2 my-2' src={boxIcon} alt="" />
+                        <h1 className='font-bold my-2'>Budgeting Intervals</h1>
                     </div>
                     <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
                     <div className='flex'>
-                        <img className='mr-2' src={starIcon} alt="" />
-                        <h1>Budgeting Intervals</h1>
+                        <img className='mr-2 my-2' src={cubeIcon} alt="" />
+                        <h1 className='font-bold my-2'>Budgeting Intervals</h1>
                     </div>
                     <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
                 </div>

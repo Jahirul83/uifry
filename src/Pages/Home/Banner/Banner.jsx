@@ -7,9 +7,9 @@ import { IoPlayCircleOutline } from "react-icons/io5";
 
 const Banner = () => {
     return (
-        <div className='flex flex-col md:flex-row justify-evenly p-8 md:p-2'>
+        <div className='flex flex-col md:flex-row justify-evenly p-8 md:p-2 items-center'>
             <div>
-                <div className='w-auto md:w-1/2'>
+                <div className='w-full md:w-3/4'>
                     <h1 className="text-4xl">Make The Best Financial Decisions</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, magni hic quod deleniti dolor in doloremque laboriosam, deserunt, accusamus autem modi totam tenetur obcaecati omnis perspiciatis neque assumenda aperiam provident?</p>
                 </div>
