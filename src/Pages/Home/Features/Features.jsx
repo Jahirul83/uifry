@@ -3,11 +3,11 @@ import features from '../../../assets/features.png';
 
 const Features = () => {
     return (
-        <div className='flex flex-col-reverse md:flex-row'>
+        <div className='flex flex-col-reverse md:flex-row items-center'>
             <div>
                 <img src={features} alt="" />
             </div>
-            <div className='p-4'>
+            <div className='p-4 w-full md:w-1/2'>
                 <h1 className='text-xl font-semibold text-red-400'>Features</h1>
                 <h1 className='text-4xl font-bold'>Uifry Premium</h1>
                 <div className='mt-3 p-11'>
