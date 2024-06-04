@@ -1,4 +1,4 @@
-
+import readyImg from '../../../assets/ready.png';
 
 const FAQ = () => {
     return (
@@ -41,7 +41,13 @@ const FAQ = () => {
                         <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
                     </div>
                 </div>
-                
+            </div>
+            {/* ready to get started image */}
+            <div className='my-2 md:my-24'>
+                <img className='w-full' src={readyImg} alt="" />
+            </div>
+            <div>
+
             </div>
         </div>
     );
