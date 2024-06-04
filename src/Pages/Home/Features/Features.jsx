@@ -3,10 +3,17 @@ import boxIcon from '../../../assets/boxIcon.png';
 import cubeIcon from '../../../assets/cubeIcon.png';
 import features from '../../../assets/features.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const Features = () => {
     return (
         <div className='flex flex-col-reverse md:flex-row items-center'>
-            <div>
+            <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img src={features} alt="" />
             </div>
             <div className='p-4 w-full md:w-1/2'>

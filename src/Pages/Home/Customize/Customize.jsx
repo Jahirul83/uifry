@@ -1,10 +1,17 @@
 import customizeImg from '../../../assets/customization.png';
 import starIconRound from '../../../assets/star.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const Customize = () => {
     return (
-       <div className='flex flex-col-reverse md:flex-row items-center'>
-            <div>
+        <div className='flex flex-col-reverse md:flex-row items-center'>
+            <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img src={customizeImg} alt="" />
             </div>
             <div className='p-4 w-full md:w-1/2'>
@@ -19,5 +26,5 @@ const Customize = () => {
         </div>
     );
 };
- 
+
 export default Customize;
