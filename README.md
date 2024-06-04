@@ -2,7 +2,7 @@
 
 
 ## Installation
-for run the project locally.
+for running the project locally.
 Use the package manager [npm](https://www.npmjs.com/) to install .
 
 ```bash
