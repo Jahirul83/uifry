@@ -32,10 +32,10 @@ const Testimonial = () => {
                     <p className='mt-4'>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.”</p>
                     {/* group image */}
                     <div className='flex mt-4'>
-                        <img className='w-12 mr-5 hover:scale-125 duration-300 ease-in-out' src={group1} alt="" />
-                        <img className='w-12 mr-5 hover:scale-125 duration-300 ease-in-out' src={group2} alt="" />
-                        <img className='w-12 mr-5 hover:scale-125 duration-300 ease-in-out' src={group3} alt="" />
-                        <img className='w-12 mr-5 hover:scale-125 duration-300 ease-in-out' src={group4} alt="" />
+                        <img className='w-12 mr-3 hover:scale-125 duration-300 ease-in-out' src={group1} alt="" />
+                        <img className='w-12 mr-3 hover:scale-125 duration-300 ease-in-out' src={group2} alt="" />
+                        <img className='w-12 mr-3 hover:scale-125 duration-300 ease-in-out' src={group3} alt="" />
+                        <img className='w-12 mr-3 hover:scale-125 duration-300 ease-in-out' src={group4} alt="" />
                         <img className='w-12 hover:scale-125 duration-300 ease-in-out' src={group5} alt="" />
                     </div>
                     <p className='mt-3 font-semibold'>nick jonas</p>

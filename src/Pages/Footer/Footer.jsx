@@ -1,15 +1,23 @@
-
+import Logo from '../../assets/Logo.png';
+import phnIcon from '../../assets/phoneIcon.png';
+import mailIcon from '../../assets/Help.png';
 
 const Footer = () => {
     return (
         <div>
             <footer className="footer p-10 bg-base-200 text-base-content">
                 <nav>
-                    <h6 className="text-3xl font-bold">Services</h6>
-                    <a className="link link-hover font-bold">Branding</a>
-                    <a className="link link-hover font-bold">Design</a>
-                    <a className="link link-hover font-bold">Marketing</a>
-                    <a className="link link-hover font-bold">Advertisement</a>
+                    <div>
+                        <img src={Logo} alt="" />
+                    </div>
+                    <div className='flex'>
+                        <img src={mailIcon} alt="" />
+                        <a className="link link-hover font-bold ml-3">help@frybix.com</a>
+                    </div>
+                    <div className='flex'>
+                        <img src={phnIcon} alt="" />
+                        <a className="link link-hover font-bold ml-3">+1 234 456 678 89</a>
+                    </div>
                 </nav>
                 <nav>
                     <h6 className="text-3xl font-bold">Links</h6>
