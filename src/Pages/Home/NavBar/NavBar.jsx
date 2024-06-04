@@ -1,14 +1,29 @@
-
+import { useContext } from "react";
 import Logo from '../../../assets/Logo.png';
+import { themeContext } from '../../../Provider/Provider';
 const NavBar = () => {
+    const { dark, setDark } = useContext(themeContext);
+
+    const handleDark = () => {
+        setDark(!dark);
+        console.log(dark);
+    }
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#ffffff' : '#333333',
+    };
+
+
     const navItems = <>
         <li><a className='font-bold hover:text-red-400'>Home</a></li>
         <li><a className='font-bold hover:text-red-400'>About us</a></li>
         <li><a className='font-bold hover:text-red-400'>Pricing</a></li>
         <li><a className='font-bold hover:text-red-400'>Features</a></li>
+        <button></button>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div style={containerStyle} className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,6 +39,7 @@ const NavBar = () => {
                 <div className="hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {navItems}
+                        <input onClick={handleDark} type="checkbox" className="toggle" />
                     </ul>
                 </div>
             </div>

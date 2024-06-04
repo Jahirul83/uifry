@@ -1,12 +1,20 @@
 import readyImg from '../../../assets/ready.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useContext } from 'react';
+import { themeContext } from '../../../Provider/Provider';
 // ..
 AOS.init();
 
 const FAQ = () => {
+    const { dark } = useContext(themeContext);
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#ffffff' : '#333333',
+    };
     return (
-        <div className="p-4">
+        <div style={containerStyle} className="p-4">
             {/* FAQ titles */}
             <h1 className="text-red-400">FAQ</h1>
             <h1 className="text-4xl font-bold w-72">Frequently Asked Questions</h1>

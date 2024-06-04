@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import starIcon from '../../../assets/StarIcon.png';
 import boxIcon from '../../../assets/boxIcon.png';
 import cubeIcon from '../../../assets/cubeIcon.png';
@@ -5,12 +6,19 @@ import features from '../../../assets/features.png';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { themeContext } from '../../../Provider/Provider';
 // ..
 AOS.init();
 
 const Features = () => {
+    const { dark } = useContext(themeContext);
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#ffffff' : '#333333',
+    };
     return (
-        <div className='flex flex-col-reverse md:flex-row items-center'>
+        <div style={containerStyle} className='flex flex-col-reverse md:flex-row items-center'>
             <div data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">

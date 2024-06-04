@@ -1,9 +1,11 @@
+import { useContext } from "react";
 import groupImg from '../../../assets/group.png';
 import group1 from '../../../assets/Group27.png';
 import group2 from '../../../assets/Group28.png';
 import group3 from '../../../assets/Group29.png';
 import group4 from '../../../assets/Group30.png';
 import group5 from '../../../assets/Group31.png';
+import { themeContext } from '../../../Provider/Provider';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -11,8 +13,14 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
 const Testimonial = () => {
+    const { dark } = useContext(themeContext);
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#ffffff' : '#333333',
+    };
     return (
-        <div>
+        <div style={containerStyle}>
             {/* titles */}
             <div className="text-center w-full md:w-64 mx-auto">
                 <h2>Testimonial</h2>

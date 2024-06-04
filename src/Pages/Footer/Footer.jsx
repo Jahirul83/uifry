@@ -1,11 +1,19 @@
 import Logo from '../../assets/Logo.png';
 import phnIcon from '../../assets/phoneIcon.png';
 import mailIcon from '../../assets/Help.png';
+import { useContext } from 'react';
+import { themeContext } from '../../Provider/Provider';
 
 const Footer = () => {
+    const { dark } = useContext(themeContext);
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#ffffff' : '#333333',
+    };
     return (
         <div>
-            <footer className="footer p-10 bg-base-200 text-base-content">
+            <footer className="footer p-10 bg-base-200 text-base-content" style={containerStyle}>
                 <nav>
                     <div>
                         <img src={Logo} alt="" />
