@@ -2,10 +2,10 @@
 import Logo from '../../../assets/Logo.png';
 const NavBar = () => {
     const navItems = <>
-        <li><a>Home</a></li>
-        <li><a>About us</a></li>
-        <li><a>Pricing</a></li>
-        <li><a>Features</a></li>
+        <li><a className='font-bold hover:text-red-400'>Home</a></li>
+        <li><a className='font-bold hover:text-red-400'>About us</a></li>
+        <li><a className='font-bold hover:text-red-400'>Pricing</a></li>
+        <li><a className='font-bold hover:text-red-400'>Features</a></li>
     </>
     return (
         <div className="navbar bg-base-100">
