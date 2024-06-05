@@ -2,13 +2,17 @@
 
 
 ## Installation
-for running the project locally.
+For running the project locally.
 Use the package manager [npm](https://www.npmjs.com/) to install .
 
 ```bash
 npm install
 ```
+And Then
 
+```bash
+npm run dev
+```
 # A brief description of the design choices and any libraries used.
 This project utilizes a combination of libraries to achieve a balance between flexibility, pre-built components, and animation:
 
